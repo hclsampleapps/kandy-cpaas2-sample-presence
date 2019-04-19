@@ -1,9 +1,10 @@
 <!doctype html>
 <html>
-<header>
+
+<head>
     <title>Presence App</title>
     <link rel="stylesheet" href="css/style.css">
-</header>
+</head>
 
 <body>
     <div>
@@ -48,18 +49,16 @@
                             <input type="text" id="sms-number-from" />
                         </li>
                     </ul>
-                    <!-- Create the Login button with the action. -->
-                    <p>
-                        <button type="button" onclick="loginByPasswordGrant()" id="loginByPwdBtn">Login</button> </p>
+                    <button type="button" onclick="loginByPasswordGrant()" id="loginByPwdBtn">Login</button>
                 </div>
                 <div id="clientCredID">
                     <ul>
                         <li>
-                            <label>Project Private Key:</label>
+                            <label>Private project key:</label>
                             <input type="text" id="privateKey" />
                         </li>
                         <li>
-                            <label>Project Private Secret:</label>
+                            <label>Private project secret:</label>
                             <input type="text" id="privateSecret" />
                         </li>
                     </ul>
@@ -69,7 +68,7 @@
         </div>
         <div>
             <h4>Subscribe to Presence Service</h4>
-            <p><input type="button" value="Subscribe" onclick="subscribeService();"></p>
+            <p><button type="button" value="Subscribe" onclick="subscribeService();"></p>
         </div>
         <div>
             <h4>Update your presence on Websocket Channel</h4>
@@ -87,9 +86,7 @@
                     <input type="text" id="note" class="long" />
                 </li>
             </ul>
-            <p>
-                <input type="button" value="Update" onclick="updatePresence()" />
-            </p>
+            <button type="button" onclick="updatePresence()">Update</button>
         </div>
         <div>
             <h4>Subscribe (watch) user</h4>
@@ -97,8 +94,8 @@
                 <label>UserId(s):</label>
                 <input type="text" id="userIdSubscribe" class="long" placeholder="e.g., username@domain.com" />
             </p>
-            <input type="button" value="Subscribe" onclick="subscribe()" />
-            <input type="button" value="Unsubscribe" onclick="unsubscribe()" />
+            <button type="button" onclick="subscribe()">Subscribe</button>
+            <button type="button" onclick="unsubscribe()">Unsubscribe</button>
         </div>
         <div>
             <h4>Fetch and Get presence</h4>
@@ -106,9 +103,9 @@
                 <label>UserId(s):</label>
                 <input type="text" id="userIdFetch" class="long" placeholder="e.g., username@domain.com" />
             </p>
-            <input type="button" value="Fetch" onclick="fetchPresence()" />
-            <input type="button" value="Get" onclick="getPresence()" />
-            <input type="button" value="Clear Activities" onclick="clearActivities()" />
+            <button type="button" onclick="fetchPresence()">Fetch</button>
+            <button type="button" onclick="getPresence()">Get</button>
+            <button type="button" onclick="clearActivities()">Clear Activities</button>
         </div>
         <div class="terminal-wrapper">
             <h4>Terminal</h4>
