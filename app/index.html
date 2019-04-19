@@ -44,10 +44,6 @@
                             <label>Password:</label>
                             <input type="password" id="password" />
                         </li>
-                        <li>
-                            <label>Phone Number:</label>
-                            <input type="text" id="sms-number-from" />
-                        </li>
                     </ul>
                     <button type="button" onclick="loginByPasswordGrant()" id="loginByPwdBtn">Login</button>
                 </div>
@@ -68,7 +64,7 @@
         </div>
         <div>
             <h4>Subscribe to Presence Service</h4>
-            <p><button type="button" value="Subscribe" onclick="subscribeService();"></p>
+            <p><button type="button" onclick="subscribeService();">Subscribe</button></p>
         </div>
         <div>
             <h4>Update your presence on Websocket Channel</h4>
